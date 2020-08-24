@@ -1,0 +1,42 @@
+Machine Learning Challenge : Adopt a Buddy ( Hacker Rank)
+
+Problem Statement : To enable that, you have been tasked to build a Machine Learning model 
+that determines type and breed of the animal based on its physical attributes and other factors.
+
+Dataset : The dataset consists of parameters such as: 
+1) pet_id  : Unique Pet ID
+2) issue date : Date on which pet was issued to the shelter
+3) listing_date : Date on which pet arrived at the shelter
+4) condition : Condition of the pet
+5) color_type : color of the pet
+6) length : Length of the pet (cms)
+7) height : Height of the pet (cms)
+8) X1,X2 : Anonymns columns
+9) breed_category : Breed category of the per
+10) pet_category : category of the pet 
+
+Challenge :
+
+1) This challenge will encourage you to apply your Machine Learning skills to build models that classify images into multiple categories - CNN
+2) This challenge will help you to actively enhance your knowledge of multi-label classification. It is one of the basic building blocks of Machine Learning
+
+
+
+### Approach for the Problem:
+
+# Feature Engineeering:
+
+1) Handling the missing values : There are missing values in both the train and test dataset (variable : Condition), So filled the missing values with a new category 
+as missing values followed type missing at random 
+
+2) Convert the dates : Listing and Issue dates into datetime format and identified the no. of days between Issue date and Listing date
+
+3) Handling Categorical variables: Applied Label Encoding to convert the colour feature into numerical form
+
+# Data Visualization : Visualied the data & identified yhat length and height does not have any significance on the target variable
+
+# Algorithms :
+
+Applied Logistic Regression, Decision trees, Random Forest, Xgboosting, Catboosting with hyper parameter tuning through which was able to achive 
+best accuracy of 90.82% for the model...
+
